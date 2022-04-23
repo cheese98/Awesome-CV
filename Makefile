@@ -1,9 +1,9 @@
 .PHONY: examples
 
 CC = xelatex
-EXAMPLES_DIR = examples
-RESUME_DIR = examples/resume
-CV_DIR = examples/cv
+EXAMPLES_DIR = jj9810
+RESUME_DIR = jj9810/resume
+CV_DIR = jj9810/cv
 RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 

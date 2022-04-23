@@ -1,9 +1,11 @@
 .PHONY: examples
 
 CC = xelatex
-EXAMPLES_DIR = .
-DATA_DIR = ./common
-DATA_SRCS = $(shell find $(DATA_DIR) -name '*.tex')
+EXAMPLES_DIR = examples
+RESUME_DIR = examples/resume
+CV_DIR = examples/cv
+RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
+CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 
 examples: $(foreach x, coverletter cv resume, $x.pdf)
 
